@@ -38,5 +38,17 @@
                 return 0;
             }
         }
+
+        public decimal Savings
+        {
+            get
+            {
+                if (Rrp>SellingPrice)
+                {
+                    return 1 - (SellingPrice/Rrp);
+                }
+                return 0;
+            }
+        }
     }
 }
